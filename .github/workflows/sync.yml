@@ -1,21 +1,17 @@
 name: Upstream Sync
 
-permissions:
-  contents: write
-
 on:
   schedule:
     - cron: "0 0 * * *" # 每天0点同步一次
   workflow_dispatch:
 
 jobs:
-  sync_latest_from_upstream:
-    name: Sync latest commits from upstream repo
-    runs-on: ubuntu-latest
-    if: ${{ github.event.repository.fork }}
+    sync_with_upstream:
+        name: Sync with Upstream
+        runs-on: ubuntu-latest
+        if: ${{ github.event.repository.fork }}
 
     steps:
-      # Step 1: run a standard checkout action
       - name: Checkout target repo
         uses: actions/checkout@v4
 
