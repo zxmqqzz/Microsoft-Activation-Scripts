@@ -1,11 +1,11 @@
-@set masver=3.8
+@set masver=3.9
 @echo off
 
 
 
 ::============================================================================
 ::
-::   Homepage: mass()grave(dot)dev
+::   Homepage: mass{}grave{dot}dev
 ::      Email: mas.help@outlook.com
 ::
 ::============================================================================
